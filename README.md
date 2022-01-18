@@ -1,81 +1,47 @@
-[English Version](./README.en-US.md)
+[简体中文版本](./README.zh_CN.md)
 
-当前的配置中使用的第三方插件有：
+# About this project
 
-- company，用来进行代码补全
-- exec-path-from-shell，解决环境变量的问题
-- -projectile-，仅Emacs 28以下的版本使用，28使用内置的project
-- rainbow-delimiters，彩虹括号（其实这个包也可以删除掉）
-- highlight-parentheses，括号高亮
-- which-key，按键提示
-- yasnippet，代码片段
-- crux，一些快捷操作
-- hungry-delete，优化的删除操作
-- drag-stuff，代码的行、块移动
-- format-all，代码格式化
-- 编程语言相关
-  - lsp-mode / lsp-ui
-  - go-mode
-  - rust-mode
-  - vue-mode
-  - web-mode / emmet-mode
-  - json-mode
-  - markdown-mode
-  - protobuf-mode
-  - restclient
-  - yaml-mode
+## About Programming language
 
-# 编程语言
+I mainly use [Python](https://www.python.org/) & [Go](https://golang.org/) in my work.  So I set up the programming environments for this two languages with [LSP](https://emacs-lsp.github.io/lsp-mode/) - the protocol from Microsoft.  If you use other languages, such as JavaScript, C++, and so on, you can easily set up for them with LSP - sometimes you just install the language servers, Emacs config code does NOT need to change.
 
-使用的是 LSP 来完成配置。你只需要安装 Language Server 的方式来自动完成配置，而不需要额外编写默认配置代码（个性化配置的话还需要特殊写代码）。
+## About the default FONT
+I use Courier & SimKai, 'cause they are the only fonts not make my Windows version slow, change the `lisp/init-ui.el` to your preferences, if you do NOT use CJK fonts.
 
-# 字体配置
+## Installation
 
-这一块非常的个性化，而且我在不同的机器上测试发现，即便同样是 Windows，在不同的机器上配置也不通用。所以你在使用我的这个配置的时候，建议自行调整显示效果。配置文件位于`list/init-ui.el`中。
+Launch a terminal, such as:
 
-另外，由于不确定使用者的机器上安装了哪些字体，默认会在一个列表中进行查找。先找到哪个就用哪个。你可以把你喜欢的字体，放在列表的最开始。
+- `Terminal` App or `iTerm2` on macOS
+- `GNOME Terminal` or `Konsole` on GNU/Linux
+- `CMD` or `PowerShell` or `Windows Terminal` on Windows 10
 
-字号，一定要调。不同的分辨率的机器上，完全不通用。
-
-与其费大力气去找一个通用的方案，不如直接使用这种方法来配置，没有必要浪费这个时间。
-
-# 配置安装
-
-通过命令行进行安装，把以下代码粘贴到终端中运行即可：
+Run the code below, and then launch your Emacs, enjoy it.
 
 ```bash
 git clone https://github.com/mathslimin/.emacs.d ~/.emacs.d
 ```
 
-如果你使用的是 27+版本，你也可以运行以下代码来安装：
+If you has already upgrade your emacs to 27.1, you also can clone this repo like this:
 
 ```bash
 git clone https://github.com/mathslimin/.emacs.d ~/.config/emacs
 ```
 
-> 注意: 如果你使用的是 Windows 平台的话，你需要自行设置一个 HOME 环境变量，否则默认安装到`%AppData%`下。
+> Note: If you use Windows 10,  you should set an environment variable named `HOME`,  and set its value to your user directory,  like `C:/Users/<your_name>`. Otherwise emacs will use `%Appdata%` as home directory by default.
 
-## 代码测试
+## Testing
 
-本项目已在以下平台测试通过：
+This project is tested on
 
-- macOS, 11.1+, GUI 模式
-- Fedora Linux 34, Workstation & Server Edition
-- Windows 10, 1909(18363) (Native GUI & msys2)
+- macOS,  11.1,  GUI mode
+- Fedora Linux 31/32/33, both Workstation & Server Edition
+- Windows 10,  1909(18363) (Native GUI & msys2)
+- Ubuntu 20.04.1 on WSL2
 
-理论上说，应该也通行于其他的平台，如果有问题，可以随时提 Issue。
+it should run on other platforms, please note that.
 
-## 问题排查
+## About bugs
 
-> Windows上如果出现闪屏
-
-如果你在Windows 10上发现界面存在闪屏的情况（比如移动光标的时候，或者键入的时候），请检查是否开启了MacType。如果是的话，将Emacs的进程添加到MacType的排除列表中即可，例如在MacType的ini文件中添加如下的代码：
-```ini
-[UnloadDll]
-emacs.exe
-runemacs.exe
-```
-
-> 如果出现乱码
-
-请使用`all-the-icon`进行字体的补全安装。另外如果是Windows的话，请额外安装Symbola。
+Any issue will be welcomed, just send me an issue if you find something not friendly to you.
