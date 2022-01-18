@@ -20,13 +20,13 @@ Launch a terminal, such as:
 Run the code below, and then launch your Emacs, enjoy it.
 
 ```bash
-git clone https://github.com/cabins/.emacs.d ~/.emacs.d
+git clone https://github.com/mathslimin/.emacs.d ~/.emacs.d
 ```
 
 If you has already upgrade your emacs to 27.1, you also can clone this repo like this:
 
 ```bash
-git clone https://github.com/cabins/.emacs.d ~/.config/emacs
+git clone https://github.com/mathslimin/.emacs.d ~/.config/emacs
 ```
 
 > Note: If you use Windows 10,  you should set an environment variable named `HOME`,  and set its value to your user directory,  like `C:/Users/<your_name>`. Otherwise emacs will use `%Appdata%` as home directory by default.

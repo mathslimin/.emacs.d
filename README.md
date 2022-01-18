@@ -44,13 +44,13 @@
 通过命令行进行安装，把以下代码粘贴到终端中运行即可：
 
 ```bash
-git clone https://github.com/cabins/.emacs.d ~/.emacs.d
+git clone https://github.com/mathslimin/.emacs.d ~/.emacs.d
 ```
 
 如果你使用的是 27+版本，你也可以运行以下代码来安装：
 
 ```bash
-git clone https://github.com/cabins/.emacs.d ~/.config/emacs
+git clone https://github.com/mathslimin/.emacs.d ~/.config/emacs
 ```
 
 > 注意: 如果你使用的是 Windows 平台的话，你需要自行设置一个 HOME 环境变量，否则默认安装到`%AppData%`下。
