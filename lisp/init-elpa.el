@@ -1,13 +1,4 @@
 ;;; init-elpa.el --- initialize the elpa repository -*- lexical-binding: t -*-
-
-;; Author: Cabins
-;; Maintainer: Cabins
-
-;;; Commentary:
-;; (c) Cabins Kong, 2020-2021
-
-;;; Code:
-
 ;;; settings for package archives
 (setq package-archives '(("melpa" . "http://mirrors.bfsu.edu.cn/elpa/melpa/")
                          ("gnu" . "http://mirrors.bfsu.edu.cn/elpa/gnu/"))

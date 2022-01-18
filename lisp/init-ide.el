@@ -1,12 +1,5 @@
 ;;; init-ide.el --- configuration for IDE programming -*- lexical-binding: t -*-
 
-;; Author: Cabins
-;; Maintainer: Cabins
-;; Homepage: github.com/cabins
-
-;;; Commentary:
-;;; Code:
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; settings for LSP MODE ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;

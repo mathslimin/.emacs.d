@@ -1,10 +1,4 @@
 ;;; init-system.el --- configs for startup -*- lexical-binding: t -*-
-;; Author: Cabins
-;; Maintainer: Cabins
-;; Homepage: https://github.com/cabins
-
-;;; Commentary:
-;; (c) Cabins Kong, 2020-2021
 
 ;;; Code:
 

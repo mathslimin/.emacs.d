@@ -36,9 +36,8 @@ git clone https://github.com/mathslimin/.emacs.d ~/.config/emacs
 This project is tested on
 
 - macOS,  11.1,  GUI mode
-- Fedora Linux 31/32/33, both Workstation & Server Edition
-- Windows 10,  1909(18363) (Native GUI & msys2)
-- Ubuntu 20.04.1 on WSL2
+- Windows 10 (Native GUI & msys2)
+- Ubuntu 20.04.1 
 
 it should run on other platforms, please note that.
 
