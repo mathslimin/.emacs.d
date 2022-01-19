@@ -3,3 +3,6 @@ projectile-bookmarks.eld
 recentf
 transient
 elpa
+eglot/server
+.lsp-session-v1
+auto-save-list
