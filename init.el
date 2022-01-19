@@ -1,9 +1,9 @@
 ;;; init.el --- the entry of emacs config -*- lexical-binding: t -*-
 ;;; Code:
-(setq url-proxy-services
-            '(("no_proxy" . "^\\(localhost\\|10.*\\)")
-                      ("http" . "127.0.0.1:4567")
-                              ("https" . "127.0.0.1:4567")))
+;;;(setq url-proxy-services
+;;;            '(("no_proxy" . "^\\(localhost\\|10.*\\)")
+;;;                      ("http" . "127.0.0.1:4567")
+;;;                              ("https" . "127.0.0.1:4567")))
 ;; set the startup default directory, not essential but recommended.
 (setq default-directory "~/")
 
