@@ -8,8 +8,8 @@
   :init
   (use-package request :defer t)
   :custom
-  (lsp-java-server-install-dir (expand-file-name "~/.emacs.d/eglot/server/java/jdt-language-server-1.5.0-202110191539/"))
-  (lsp-java-workspace-dir (expand-file-name "~/.emacs.d/eglot/server/java/workspace/")))
+  (lsp-java-server-install-dir (expand-file-name "~/.emacs.d/server/java/jdt-language-server/"))
+  (lsp-java-workspace-dir (expand-file-name "~/.emacs.d/server/java/workspace/")))
 (provide 'init-java)
 ;; Local Variables:
 ;; byte-compile-warnings: (not free-vars unresolved)
