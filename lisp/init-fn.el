@@ -55,9 +55,9 @@
     (when ef
       (dolist (face '(default fixed-pitch fixed-pitch-serif variable-pitch))
 	(set-face-attribute face nil :family ef)))
-    (when em
-      (dolist (charset '(unicode unicode-bmp symbol emoji))
-        (set-fontset-font t charset em nil 'prepend)))
+;;    (when em
+;;      (dolist (charset '(unicode unicode-bmp symbol emoji))
+;;        (set-fontset-font t charset em nil 'prepend)))
     (when cf
       (dolist (charset '(kana han cjk-misc bopomofo))
 	(set-fontset-font t charset cf))
