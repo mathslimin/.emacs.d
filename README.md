@@ -23,10 +23,13 @@ Run the code below, and then launch your Emacs, enjoy it.
 git clone https://github.com/mathslimin/.emacs.d ~/.emacs.d
 ```
 
-If you has already upgrade your emacs to 27.1, you also can clone this repo like this:
-
+install java-lsp-server, Below configuration is based on https://github.com/emacs-lsp/lsp-java#quick-start
 ```bash
-git clone https://github.com/mathslimin/.emacs.d ~/.config/emacs
+mkdir .emacs.d/eglot/server/java 
+cd .emacs.d/eglot/server/java
+wget https://download.eclipse.org/jdtls/milestones/1.5.0/jdt-language-server-1.5.0-202110191539.tar.gz
+tar zxvf jdt-language-server-1.5.0-202110191539.tar.gz -C jdt-language-server-1.5.0-202110191539
+ls ~/.emacs.d/eglot/server/java/jdt-language-server-1.5.0-202110191539/plugins/org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar
 ```
 
 > Note: If you use Windows 10,  you should set an environment variable named `HOME`,  and set its value to your user directory,  like `C:/Users/<your_name>`. Otherwise emacs will use `%Appdata%` as home directory by default.
