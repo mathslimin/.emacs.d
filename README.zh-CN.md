@@ -31,7 +31,7 @@
 
 # 字体配置
 
-配置文件位于`list/init-ui.el`中。
+配置文件位于`list/init-fn.el`中。
 
 # 配置安装
 
