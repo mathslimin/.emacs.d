@@ -25,7 +25,7 @@ git clone https://github.com/mathslimin/.emacs.d ~/.emacs.d
 
 install java-lsp-server, Below configuration is based on https://github.com/emacs-lsp/lsp-java#quick-start
 ```bash
-mkdir .emacs.d/eglot/server/java 
+mkdir -p .emacs.d/eglot/server/java 
 cd .emacs.d/eglot/server/java
 wget https://download.eclipse.org/jdtls/milestones/1.5.0/jdt-language-server-1.5.0-202110191539.tar.gz
 tar zxvf jdt-language-server-1.5.0-202110191539.tar.gz -C jdt-language-server
