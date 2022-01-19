@@ -41,24 +41,9 @@
 git clone https://github.com/mathslimin/.emacs.d ~/.emacs.d
 ```
 
-如果你使用的是 27+版本，你也可以运行以下代码来安装：
-
-```bash
-git clone https://github.com/mathslimin/.emacs.d ~/.config/emacs
-```
-
 > 注意: 如果你使用的是 Windows 平台的话，你需要自行设置一个 HOME 环境变量，否则默认安装到`%AppData%`下。
 
 ## 问题排查
-
-> Windows上如果出现闪屏
-
-如果你在Windows 10上发现界面存在闪屏的情况（比如移动光标的时候，或者键入的时候），请检查是否开启了MacType。如果是的话，将Emacs的进程添加到MacType的排除列表中即可，例如在MacType的ini文件中添加如下的代码：
-```ini
-[UnloadDll]
-emacs.exe
-runemacs.exe
-```
 
 > 如果出现乱码
 
