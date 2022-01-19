@@ -1,42 +1,41 @@
 ;;; init.el --- the entry of emacs config -*- lexical-binding: t -*-
-
 ;;; Code:
+(setq url-proxy-services
+            '(("no_proxy" . "^\\(localhost\\|10.*\\)")
+                      ("http" . "127.0.0.1:4567")
+                              ("https" . "127.0.0.1:4567")))
+;; set the startup default directory, not essential but recommended.
 (setq default-directory "~/")
 
-;; Update the load-path
-(add-to-list 'load-path (expand-file-name (concat user-emacs-directory "lisp/")))
+;; update load-path to make customized lisp codes work
+(push (expand-file-name "lisp" user-emacs-directory) load-path)
 
-;; Settings for Emacs 28+
-(when (and (fboundp 'native-comp-available-p)
-	   (native-comp-available-p))
-  (setq native-comp-async-report-warnings-errors nil
-	comp-deferred-compilation t
-	package-native-compile t)
-  (add-to-list 'native-comp-eln-load-path (expand-file-name "eln-cache" user-emacs-directory)))
+;; provides some useful functions, add more here if you want
+(require 'init-fn)			;define the functions
 
-;; consts defination
-;; (defconst *is-mac* (eq system-type 'darwin) "Apple macOS platform.")
-;; (defconst *is-linux* (eq system-type 'gnu/linux) "GNU/Linux platform.")
-;; (defconst *is-windows* (memq system-type '(cygwin windows-nt ms-dos)) "Windows / DOS.")
+;; change Emacs default settings here, variables only (NOT include built-in packages)
+(require 'init-system)			;better emacs configs
 
-;; settings for independent packages and etc.
-(require 'init-fn)
-(require 'init-system)
-(require 'init-elpa)
-(require 'init-package)
-(require 'init-builtin)
-(require 'init-kbd)
-(require 'init-ide)
-(require 'init-ui)
+;; settings for Melpa/Elpa/GNU repos for Emacs
+(require 'init-elpa)			;package initialize
 
-;; load custom file at last
+;; change default Emacs settings with built-in packages
+(require 'init-builtin)			;better builtin packages
+
+;; all the third-part packages configed here
+(require 'init-package)			;third-part packages
+
+;; settings for programming languages (include LSP feature)
+(require 'init-lang)			;for programming
+
+;; DON'T forget to define and load custom file at last
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (when (file-exists-p custom-file)
-  (load custom-file))
+    (load custom-file nil t))
 
 (provide 'init)
 
 ;;; init.el ends here
-;; Local Variables:
-;; byte-compile-warnings: (not obsolete free-vars unresolved)
+ ;; Local Variables:
+;; byte-compile-warnings: (not unresolved obsolete)
 ;; End:
