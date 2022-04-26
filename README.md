@@ -1,4 +1,4 @@
-[简体中文版本](./README.zh_CN.md)
+[简体中文版本](./README.zh-CN.md)
 
 # About this project
 
