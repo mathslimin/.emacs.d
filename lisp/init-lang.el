@@ -27,12 +27,13 @@
   (format-all-mode)
 ))
 (add-hook 'c++-mode-hook (lambda ()
-  (format-all-mode)
+  (format-all-mode 0)
 ))
 (add-hook 'c-mode-hook (lambda ()
-  (format-all-mode)
+  (format-all-mode 0)
 ))
-
+;;disable format-all-mode 0
+;;disabled if ARG is a negative integer or zero, and enabled otherwise.
 (provide 'init-lang)
 
 ;;; init-lang.el ends here
