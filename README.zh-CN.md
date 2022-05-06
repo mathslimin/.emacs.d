@@ -48,3 +48,16 @@ git clone https://github.com/mathslimin/.emacs.d ~/.emacs.d
 > 如果出现乱码
 
 请使用`all-the-icon`进行字体的补全安装。另外如果是Windows的话，请额外安装Symbola。
+### 常用命令
+project.el 提供了很多命令来方便在项目中进行操作，这里列举几个常用的：
+project-remember-projects-under，增加项目
+project-forget-project，删除项目
+project-switch-project，切换项目
+project-compile，执行项目的 compile 命令
+project-search，在项目中搜索指定关键字
+project-query-replace-regexp，在项目中执行正则替换
+project-shell-command，执行 shell 命令
+project-eshell，在根目录打开 eshell
+project-dired，在根目录打开 dired
+project-find-dir，在项目指定目录打开 dired
+project-switch-to-buffer，切换到项目中已经打开的 buffer
