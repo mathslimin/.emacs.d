@@ -8,7 +8,8 @@
 	    (lambda ()
 	      (lsp-enable-which-key-integration)
 	      (add-hook 'before-save-hook #'lsp-organize-imports t t)
-	      (add-hook 'before-save-hook #'lsp-format-buffer t t)))
+	      ;;(add-hook 'before-save-hook #'lsp-format-buffer t t)
+            ))
   (add-hook 'prog-mode-hook (lambda() (unless (derived-mode-p 'emacs-lisp-mode 'lisp-mode)(lsp-deferred))))
   :config
   (setq lsp-auto-guess-root t
