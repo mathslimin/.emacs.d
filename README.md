@@ -33,6 +33,8 @@ ls ~/.emacs.d/server/java/jdt-language-server/plugins/org.eclipse.equinox.launch
 ```
 
 > Note: If you use Windows 10,  you should set an environment variable named `HOME`,  and set its value to your user directory,  like `C:/Users/<your_name>`. Otherwise emacs will use `%Appdata%` as home directory by default.
+### start mini
+emacs -Q -l early-init.el
 
 ## Testing
 
