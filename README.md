@@ -22,7 +22,11 @@ Run the code below, and then launch your Emacs, enjoy it.
 ```bash
 git clone https://github.com/mathslimin/.emacs.d ~/.emacs.d
 ```
-
+### install dependency
+```bash
+sudo apt install nodejs npm
+sudo npm install -g bash-language-server
+```
 install java-lsp-server, Below configuration is based on https://github.com/emacs-lsp/lsp-java#quick-start
 ```bash
 mkdir -p .emacs.d/server/java/jdt-language-server
