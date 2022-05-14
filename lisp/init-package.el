@@ -60,7 +60,6 @@
   :diminish
   :hook (prog-mode . format-all-ensure-formatter)
   :bind ("C-c f" . #'format-all-buffer))
-
 ;; gnu-elpa-keyring-update
 (use-package gnu-elpa-keyring-update)
 
