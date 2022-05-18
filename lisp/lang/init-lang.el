@@ -41,8 +41,8 @@
 (use-package yasnippet-snippets :diminish)
 
 ;; Language Server
-(require 'init-eglot) ; eglot
-;; (require 'init-lsp)   ; lsp, enable this line if you like lsp-mode and disable eglot line
+;;(require 'init-eglot) ; eglot
+(require 'init-lsp)   ; lsp, enable this line if you like lsp-mode and disable eglot line
 
 ;; Specific Languages
 (require 'init-lang-go)

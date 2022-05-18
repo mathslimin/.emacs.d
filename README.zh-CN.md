@@ -70,27 +70,29 @@ touch .project
 
 ### use projectile
 https://phenix3443.github.io/notebook/emacs/modes/projectile-mode.html
-官方文档 https://docs.projectile.mx/projectile/usage.html
-只需在其中创建一个空的 .projectile 文件。Projectile 的一些特点：
 
-跳转到项目中的文件(c-p-f)。
-跳转到项目中当前 point 处所指示的文件(c-p-g)。
-跳转到项目中的目录(c-p-d)。
-跳转到目录中的文件。
-跳转到项目有关的 buffer(c-p-b)。
-跳转到项目的测试(c-p-T)。
-在同名但不同扩展名的文件间跳转（例如.h 和.cpp）(c-p-a)。
-跳转到项目中最近浏览的文件(c-p-e)。
-在工作的项目间切换。
-关闭项目有关的 buffer(c-p-k)。
-在项目范围内替换(c-p-r)。
-在项目所有 buffer 中查找出现(c-p-o)。
-在项目中查找(c-p-s-g)。
-重新生成你项目的 etags 或 gtags：projectile-regenerate-tags (C-c p R)
-跳转到tag：projectile-find-tag        (C-c p j)
-从tag跳回：pop-tag-mark
-在 dired 中访问项目(c-p-D)。
-在项目上执行 make。
-在项目的根目录执行命令(c-p-!)。
-检查脏的存储库。
-创建项目设置文件(dir-local-file)(c-p-E)
+官方文档 https://docs.projectile.mx/projectile/usage.html
+
+只需在其中创建一个空的 .projectile 文件。
+Projectile 的一些特点：
+ - 跳转到项目中的文件(c-p-f)。
+ - 跳转到项目中当前 point 处所指示的文件(c-p-g)。
+ - 跳转到项目中的目录(c-p-d)。
+ - 跳转到目录中的文件。
+ - 跳转到项目有关的 buffer(c-p-b)。
+ - 跳转到项目的测试(c-p-T)。
+ - 在同名但不同扩展名的文件间跳转（例如.h 和.cpp）(c-p-a)。
+ - 跳转到项目中最近浏览的文件(c-p-e)。
+ - 在工作的项目间切换。
+ - 关闭项目有关的 buffer(c-p-k)。
+ - 在项目范围内替换(c-p-r)。
+ - 在项目所有 buffer 中查找出现(c-p-o)。
+ - 在项目中查找(c-p-s-g)。
+ - 重新生成你项目的 etags 或 gtags：projectile-regenerate-tags (C-c p R)
+ - 跳转到tag：projectile-find-tag        (C-c p j)
+ - 从tag跳回：pop-tag-mark
+ - 在 dired 中访问项目(c-p-D)。
+ - 在项目上执行 make。
+ - 在项目的根目录执行命令(c-p-!)。
+ - 检查脏的存储库。
+ - 创建项目设置文件(dir-local-file)(c-p-E)
