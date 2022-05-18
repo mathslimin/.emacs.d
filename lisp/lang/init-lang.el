@@ -46,6 +46,7 @@
 
 ;; Specific Languages
 (require 'init-lang-go)
+(require 'init-lang-java)
 (require 'init-lang-python)
 (require 'init-lang-rust)
 (require 'init-lang-web)

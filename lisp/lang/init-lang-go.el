@@ -4,13 +4,14 @@
 ;;; Code:
 
 ;; Golang
+;;(use-package company-go) 
 (use-package go-mode)
 
 ;;; optional packages
-;; (use-package go-fill-struct)
-;; (use-package go-impl)
-;; (use-package go-gen-test)
-;; (use-package go-tag)
+(use-package go-fill-struct)
+(use-package go-impl)
+(use-package go-gen-test)
+(use-package go-tag)
 
 (provide 'init-lang-go)
 
