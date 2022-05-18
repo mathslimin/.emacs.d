@@ -70,6 +70,7 @@ touch .project
 
 ### use projectile
 https://phenix3443.github.io/notebook/emacs/modes/projectile-mode.html
+官方文档 https://docs.projectile.mx/projectile/usage.html
 只需在其中创建一个空的 .projectile 文件。Projectile 的一些特点：
 
 跳转到项目中的文件(c-p-f)。
