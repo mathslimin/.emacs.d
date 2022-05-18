@@ -1,4 +1,7 @@
 ;;; init-elpa.el --- initialize the elpa repository -*- lexical-binding: t -*-
+;;; Commentary:
+;; (c) Cabins Kong, 2022-
+
 ;;; Code:
 
 ;; add melpa to package-archives
@@ -6,8 +9,8 @@
 ;;(setq package-check-signature nil
 ;;      load-prefer-newer t)
 ;;(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
-(setq package-archives '(("melpa" . "http://mirrors.bfsu.edu.cn/elpa/melpa/")
-                         ("gnu" . "http://mirrors.bfsu.edu.cn/elpa/gnu/"))
+(setq package-archives '(("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+                         ("gnu" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/"))
       package-check-signature nil
       load-prefer-newer t)
 ;; don't bother with the initialize, although it may cause much startup time,

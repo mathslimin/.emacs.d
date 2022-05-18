@@ -7,3 +7,4 @@ eglot/server
 .lsp-session-v1
 auto-save-list
 server
+.DS_Store

@@ -4,10 +4,10 @@
 
 ## About Programming language
 
-I mainly use [Python](https://www.python.org/) & [Go](https://golang.org/) in my work.  So I set up the programming environments for this two languages with [LSP](https://emacs-lsp.github.io/lsp-mode/) - the protocol from Microsoft.  If you use other languages, such as JavaScript, C++, and so on, you can easily set up for them with LSP - sometimes you just install the language servers, Emacs config code does NOT need to change.
+I like to use [Python](https://www.python.org/) & [Go](https://golang.org/) in my work.  So I set up the programming environments for this two languages with [LSP](https://emacs-lsp.github.io/lsp-mode/) - the protocol from Microsoft.  If you use other languages, such as JavaScript, C++, and so on, you can easily set up for them with LSP - sometimes you just install the language servers, Emacs config code does NOT need to change.
 
 ## About the default FONT
-I use Courier & SimKai, 'cause they are the only fonts not make my Windows version slow, change the `lisp/init-ui.el` to your preferences, if you do NOT use CJK fonts.
+I use Courier & SimKai, 'cause they are the only fonts not make Windows version slow, change the `lisp/init-ui.el` to your preferences, if you do NOT use CJK fonts.
 
 ## Installation
 
@@ -49,7 +49,15 @@ This project is tested on
 - Ubuntu 20.04.1 
 
 it should run on other platforms, please note that.
+## Basic Usage
+Enable projectile-mode, open a file in one of your projects and type a command such as C-c p f
+## ctags
+```shell
+mv /Users/limin/software/emacs/ctags /Users/limin/software/emacs/ctags_backup
+brew install ctags
+```
 
+https://phenix3443.github.io/notebook/emacs/modes/projectile-mode.html
 ## About bugs
 
 Any issue will be welcomed, just send me an issue if you find something not friendly to you.

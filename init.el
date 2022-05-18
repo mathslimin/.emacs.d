@@ -1,37 +1,40 @@
 ;;; init.el --- the entry of emacs config -*- lexical-binding: t -*-
+
+;; Author: Cabins
+;; Maintainer: Cabins
+;; Version: 1.0
+;; Homepage: https://github.com/cabins/termux-emacs
+;;; Commentary:
+;; (c) Cabins Kong, 2022-
+
 ;;; Code:
-;;;(setq url-proxy-services
-;;;            '(("no_proxy" . "^\\(localhost\\|10.*\\)")
-;;;                      ("http" . "127.0.0.1:4567")
-;;;                              ("https" . "127.0.0.1:4567")))
+
 ;; set the startup default directory, not essential but recommended.
 (setq default-directory "~/")
 
 ;; update load-path to make customized lisp codes work
-(push (expand-file-name "lisp" user-emacs-directory) load-path)
+(dolist (folder '("common" "lang" "feature" "platform" "version"))
+  (push (expand-file-name (format "lisp/%s" folder) user-emacs-directory) load-path))
 
-;; provides some useful functions, add more here if you want
-(require 'init-fn)			;define the functions
+;; settings depend on emacs version
+(require 'init-version)
 
-;; change Emacs default settings here, variables only (NOT include built-in packages)
-(require 'init-system)			;better emacs configs
+;; common settings (no dependecies with version/os)
+(require 'init-common)
 
-;; settings for Melpa/Elpa/GNU repos for Emacs
-(require 'init-elpa)			;package initialize
+;; different settings depends on os platform
+(require 'init-platform)
 
-;; change default Emacs settings with built-in packages
-(require 'init-builtin)			;better builtin packages
+;; settings for programming languages (include IDE/LSP feature)
+(require 'init-lang)
 
-;; all the third-part packages configed here
-(require 'init-package)			;third-part packages
-
-;; settings for programming languages (include LSP feature)
-(require 'init-lang)			;for programming
+;; other features, such as UI/daemon etc.
+(require 'init-feature)
 
 ;; DON'T forget to define and load custom file at last
-(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(setq custom-file (locate-user-emacs-file "custom.el"))
 (when (file-exists-p custom-file)
-    (load custom-file nil t))
+    (load custom-file))
 
 (provide 'init)
 
