@@ -27,8 +27,7 @@
 	    lsp-log-io nil)
   (define-key lsp-mode-map (kbd "C-c l") lsp-command-map))
 
-;; Optional features, disabled default
-(when nil
+;; Optional features
   (use-package lsp-ui
     :after lsp-mode
     :init
@@ -39,7 +38,7 @@
     (add-hook 'lsp-ui-mode-hook 'lsp-modeline-code-actions-mode)
     :config
     (define-key lsp-ui-mode-map [remap xref-find-definitions] #'lsp-ui-peek-find-definitions)
-    (define-key lsp-ui-mode-map [remap xref-find-references] #'lsp-ui-peek-find-references)))
+    (define-key lsp-ui-mode-map [remap xref-find-references] #'lsp-ui-peek-find-references))
 
 ;; debug with dap-mode
 (when nil
@@ -54,7 +53,7 @@
     ))
 
 ;; java mode with lsp
-(use-package lsp-java)
+;;(use-package lsp-java)
 
 (provide 'init-lsp)
 ;;; init-lsp.el ends here
