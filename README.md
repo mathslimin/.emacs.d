@@ -20,7 +20,7 @@ Launch a terminal, such as:
 Run the code below, and then launch your Emacs, enjoy it.
 
 ```bash
-git clone https://github.com/mathslimin/.emacs.d ~/.emacs.d
+git clone https://github.com/mathslimin/.emacs.d --depth=1 ~/.emacs.d
 ```
 ### install dependency
 ```bash
