@@ -1,14 +1,10 @@
 ;;; init.el --- the entry of emacs config -*- lexical-binding: t -*-
-
-;; Author: Cabins
-;; Maintainer: Cabins
-;; Version: 1.0
-;; Homepage: https://github.com/cabins/termux-emacs
-;;; Commentary:
-;; (c) Cabins Kong, 2022-
-
 ;;; Code:
-
+;;open proxy
+;;(setq url-proxy-services
+;;            '(("no_proxy" . "^\\(localhost\\|10.*\\)")
+;;                      ("http" . "127.0.0.1:3128")
+;;                              ("https" . "127.0.0.1:3128")))
 ;; set the startup default directory, not essential but recommended.
 (setq default-directory "~/")
 
