@@ -1,6 +1,5 @@
 ;;; init-elpa.el --- initialize the elpa repository -*- lexical-binding: t -*-
 ;;; Commentary:
-;; (c) Cabins Kong, 2022-
 
 ;;; Code:
 
@@ -9,10 +8,11 @@
 ;;(setq package-check-signature nil
 ;;      load-prefer-newer t)
 ;;(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
-(setq package-archives '(("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
-                         ("gnu" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/"))
+(setq package-archives '(("melpa" . "http://mirrors.bfsu.edu.cn/elpa/melpa/")
+                         ("gnu" . "http://mirrors.bfsu.edu.cn/elpa/gnu/"))
       package-check-signature nil
-      load-prefer-newer t)
+      load-prefer-newer nil)
+
 ;; don't bother with the initialize, although it may cause much startup time,
 ;; there's no way to avoid this if you use package.el instead of other package
 ;; manager, like straight.el
