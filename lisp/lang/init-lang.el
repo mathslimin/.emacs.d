@@ -74,12 +74,9 @@
 (add-hook 'c-mode-hook (lambda ()
   (format-all-mode 0)
 ))
-;; (add-hook 'c++-mode-hook (lambda ()
-;;   (format-all-mode)
-;; ))
-;; (add-hook 'c-mode-hook (lambda ()
-;;   (format-all-mode)
-;; ))
+(add-hook 'sh-mode-hook (lambda ()
+  (format-all-mode)
+))
 (provide 'init-lang)
 
 ;;; init-lang.el ends here
