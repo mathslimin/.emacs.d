@@ -31,7 +31,12 @@
 (setq custom-file (locate-user-emacs-file "custom.el"))
 (when (file-exists-p custom-file)
     (load custom-file))
-
+(global-set-key (kbd "C-c /") 'comment-or-uncomment-region) 
+(global-set-key (kbd "C-c y") 'clipboard-yank) ;; 将clipboard-yank函数绑定到按键"C-c y上"
+(global-set-key (kbd "C-M-q") 'query-replace)
+(global-set-key (kbd "<f5>") 'flyspell-mode)
+(global-set-key (kbd "C-<f5>") 'linum-mode)
+(global-set-key (kbd "C-<right>") 'forward-sentence)
 (provide 'init)
 
 ;;; init.el ends here
