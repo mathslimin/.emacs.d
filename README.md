@@ -29,7 +29,7 @@ sudo npm install -g bash-language-server
 ```
 install java-lsp-server, Below configuration is based on https://github.com/emacs-lsp/lsp-java#quick-start
 ```bash
-mkdir -p .emacs.d/server/java/jdt-language-server
+mkdir -p ~/.emacs.d/server/java/jdt-language-server
 cd ~/.emacs.d/server/java
 wget https://download.eclipse.org/jdtls/milestones/1.5.0/jdt-language-server-1.5.0-202110191539.tar.gz
 tar zxvf jdt-language-server-1.5.0-202110191539.tar.gz -C jdt-language-server
