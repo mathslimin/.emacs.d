@@ -11,3 +11,10 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+(defun compile-and-run-c ()
+  "Compile and run the current C file."
+  (interactive)
+  (compile (concat "gcc -I../include -I../../include -lm -lpthread -L../lib -o /tmp/cdebug.exe" " " buffer-file-name " && " "/tmp/cdebug.exe" )))
+(global-set-key (kbd "C-c C-r") 'compile-and-run-c)
+(global-set-key (kbd "<f5>") 'compile-and-run-c)
